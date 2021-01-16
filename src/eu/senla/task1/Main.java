@@ -14,5 +14,6 @@ public class Main {
 
         System.out.println(number.getA());
         System.out.println(f);
+        System.out.println(b);
     }
 }
