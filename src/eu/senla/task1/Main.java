@@ -61,7 +61,25 @@ public class Main {
 
         System.out.println("double: "+ d4 + " int: " + i4);
 
+        /*________________________Классы обертки*/
+        System.out.println("Классы обертки: ");
+        Integer I_1 = 5;
+        Integer I_2 = 5;
+        System.out.println(I_1 == I_2); // true
+
+        Integer I_3 = 129;
+        Integer I_4 = 129;
+        System.out.println(I_3 == I_4); // false
+
+        int i_1 = 5;
+        System.out.println(i_1 == I_1); // true
+
+        int i_3 = 129;
+        System.out.println(i_3 == I_3); // true
+
+
         /*________________________Методы классов оберток*/
+
         String st = "127";
         byte bb = Byte.parseByte(st);
         short ss = Short.parseShort(st);
