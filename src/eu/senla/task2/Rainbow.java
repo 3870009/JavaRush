@@ -1,5 +1,9 @@
 package eu.senla.task2;
 
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
+import java.io.IOException;
+
 public class Rainbow {
     final String COLOR_1 = "красный";
     final String COLOR_2 = "оранжевый";
@@ -8,6 +12,27 @@ public class Rainbow {
     final String COLOR_5 = "голубой";
     final String COLOR_6 = "синий";
     final String COLOR_7 = "фиолетовый";
+
+    void userInput() throws IOException{
+        BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+
+        while (true) {
+            System.out.print("Введите номер цвета (0- для выхода из программы): ");
+            int userColor = Integer.parseInt(reader.readLine());
+            if(userColor == 0) break;
+            else {
+                if(userColor < 0 || userColor >= 100)
+                    System.out.println("Неверный ввод. Диапазон ввода для простых цветов 1-7, для сложных цветов 10-77. Пожалуйста, повторите ввод.");
+                if(userColor >= 10 && userColor < 100){
+                    int userColor1 = userColor/10; //нахождение числа из разряда десятков
+                    int userColor2 = userColor%10; //нахождение числа из разряда единиц
+                    showNumToColor(userColor1,userColor2);
+                }
+                if(userColor > 0 && userColor < 10)
+                    showNumToColor(userColor);
+            }
+        }
+    }
 
     void showNumToColor(int userColor) {
         switch (userColor) {
