@@ -54,8 +54,8 @@ public class Main {
 
         System.out.println("Сужение типов:");
         System.out.println("long: " + l3 +" int : " + i3 + " short : " + s3 + " byte: " + b3);
-        System.out.println("Усечение рациональных чисел до целых:");
 
+        System.out.println("Усечение рациональных чисел до целых:");
         double d4 = 3.7868393944;
         int i4 = (int)d4;
 
