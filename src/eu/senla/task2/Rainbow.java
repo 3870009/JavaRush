@@ -26,10 +26,10 @@ public class Rainbow {
                 if(userColor >= 10 && userColor < 100){
                     int userColor1 = userColor/10; //нахождение числа из разряда десятков
                     int userColor2 = userColor%10; //нахождение числа из разряда единиц
-                    showNumToColor(userColor1,userColor2);
+                    showNumToColor(userColor1,userColor2);//использование метода с 2 параметрами
                 }
                 if(userColor > 0 && userColor < 10)
-                    showNumToColor(userColor);
+                    showNumToColor(userColor);//использование метода с 1 параметром
             }
         }
     }
@@ -63,7 +63,7 @@ public class Rainbow {
     }
 
     void showNumToColor(int userColor1, int userColor2) {
-        int userColorMix = Integer.parseInt(String.valueOf(userColor1) + String.valueOf(userColor2));
+        int userColorMix = Integer.parseInt(String.valueOf(userColor1) + String.valueOf(userColor2)); //склейка двух цифр в число
 
         switch (userColorMix) {
             case 01:
