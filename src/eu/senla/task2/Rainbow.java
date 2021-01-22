@@ -12,6 +12,13 @@ public class Rainbow {
     final String COLOR_5 = "голубой";
     final String COLOR_6 = "синий";
     final String COLOR_7 = "фиолетовый";
+    final String MIXCOLOR_1 = "красно-";
+    final String MIXCOLOR_2 = "оранжево-";
+    final String MIXCOLOR_3 = "желто-";
+    final String MIXCOLOR_4 = "зелено-";
+    final String MIXCOLOR_6 = "сине-";
+    final String MIXCOLOR_7 = "фиолетово-";
+
 
     void userInput() throws IOException{
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
@@ -76,22 +83,22 @@ public class Rainbow {
                 showNumToColor(1);
                 break;
             case 12:
-                System.out.println("Выбранный цвет - красно-" + COLOR_2);
+                System.out.println("Выбранный цвет - " + MIXCOLOR_1 + COLOR_2);
                 break;
             case 13:
-                System.out.println("Выбранный цвет - красно-" + COLOR_3);
+                System.out.println("Выбранный цвет - " + MIXCOLOR_1 + COLOR_3);
                 break;
             case 14:
-                System.out.println("Выбранный цвет - красно-" + COLOR_4);
+                System.out.println("Выбранный цвет - " + MIXCOLOR_1 + COLOR_4);
                 break;
             case 15:
-                System.out.println("Выбранный цвет - красно-" + COLOR_5);
+                System.out.println("Выбранный цвет - " + MIXCOLOR_1 + COLOR_5);
                 break;
             case 16:
-                System.out.println("Выбранный цвет - красно-" + COLOR_6);
+                System.out.println("Выбранный цвет - " + MIXCOLOR_1 + COLOR_6);
                 break;
             case 17:
-                System.out.println("Выбранный цвет - красно-" + COLOR_7);
+                System.out.println("Выбранный цвет - " + MIXCOLOR_1 + COLOR_7);
                 break;
             case 02:
                 showNumToColor(2);
@@ -106,19 +113,19 @@ public class Rainbow {
                 showNumToColor(1,2);
                 break;
             case 23:
-                System.out.println("Выбранный цвет - оранжево-" + COLOR_3);
+                System.out.println("Выбранный цвет - " +MIXCOLOR_2 + COLOR_3);
                 break;
             case 24:
-                System.out.println("Выбранный цвет - оранжево-" + COLOR_4);
+                System.out.println("Выбранный цвет - " + MIXCOLOR_2 + COLOR_4);
                 break;
             case 25:
-                System.out.println("Выбранный цвет - оранжево-" + COLOR_5);
+                System.out.println("Выбранный цвет - " + MIXCOLOR_2 + COLOR_5);
                 break;
             case 26:
-                System.out.println("Выбранный цвет - оранжево-" + COLOR_6);
+                System.out.println("Выбранный цвет - " + MIXCOLOR_2 + COLOR_6);
                 break;
             case 27:
-                System.out.println("Выбранный цвет - оранжево-" + COLOR_7);
+                System.out.println("Выбранный цвет - " + MIXCOLOR_2 + COLOR_7);
                 break;
             case 03:
                 showNumToColor(3);
@@ -136,16 +143,16 @@ public class Rainbow {
                 showNumToColor(2,3);
                 break;
             case 34:
-                System.out.println("Выбранный цвет - желто-" + COLOR_4);
+                System.out.println("Выбранный цвет - " + MIXCOLOR_3 + COLOR_4);
                 break;
             case 35:
-                System.out.println("Выбранный цвет - желто-" + COLOR_5);
+                System.out.println("Выбранный цвет - " + MIXCOLOR_3 + COLOR_5);
                 break;
             case 36:
-                System.out.println("Выбранный цвет - желто-" + COLOR_6);
+                System.out.println("Выбранный цвет - " + MIXCOLOR_3 + COLOR_6);
                 break;
             case 37:
-                System.out.println("Выбранный цвет - желто-" + COLOR_7);
+                System.out.println("Выбранный цвет - " + MIXCOLOR_3 + COLOR_7);
                 break;
             case 04:
                 showNumToColor(4);
@@ -166,13 +173,13 @@ public class Rainbow {
                 showNumToColor(3,4);
                 break;
             case 45:
-                System.out.println("Выбранный цвет - зелено-" + COLOR_5);
+                System.out.println("Выбранный цвет - " + MIXCOLOR_4 + COLOR_5);
                 break;
             case 46:
-                System.out.println("Выбранный цвет - зелено-" + COLOR_6);
+                System.out.println("Выбранный цвет - " + MIXCOLOR_4 + COLOR_6);
                 break;
             case 47:
-                System.out.println("Выбранный цвет - зелено-" + COLOR_7);
+                System.out.println("Выбранный цвет - " + MIXCOLOR_4 + COLOR_7);
                 break;
             case 05:
                 showNumToColor(5);
@@ -196,10 +203,10 @@ public class Rainbow {
                 showNumToColor(4,5);
                 break;
             case 56:
-                System.out.println("Выбранный цвет - сине-" + COLOR_5);
+                System.out.println("Выбранный цвет - " + MIXCOLOR_6 + COLOR_5);
                 break;
             case 57:
-                System.out.println("Выбранный цвет - фиолетово-" + COLOR_5);
+                System.out.println("Выбранный цвет - " + MIXCOLOR_7 + COLOR_5);
                 break;
             case 06:
                 showNumToColor(6);
@@ -226,7 +233,7 @@ public class Rainbow {
                 showNumToColor(5,6);
                 break;
             case 67:
-                System.out.println("Выбранный цвет - сине-" + COLOR_7);
+                System.out.println("Выбранный цвет - " + MIXCOLOR_6  + COLOR_7);
                 break;
             case 07:
                 showNumToColor(7);
