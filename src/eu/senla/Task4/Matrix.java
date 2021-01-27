@@ -4,7 +4,7 @@ import java.util.Random;
 
 public class Matrix {
 
-    public String randomString() {
+    public String makeRandomString() {
         String symbols = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
         Random random = new Random();
         StringBuilder sb = new StringBuilder();
@@ -14,10 +14,10 @@ public class Matrix {
         return sb.toString();
     }
 
-    public String randomStringDouble() {
+    public String makeRandomStringDouble(int min, int max) {
         Random random = new Random();
         String stringDouble;
-        stringDouble = String.valueOf(random.nextDouble() * 3 + 1);
+        stringDouble = String.valueOf((random.nextDouble() * (max-min)) + 1);
         return stringDouble.substring(0, 6);
     }
 
@@ -26,9 +26,9 @@ public class Matrix {
         for (int i = 0; i < matr.length; i++) {
             for (int j = 0; j < matr[i].length; j++) {
                 if (j == 0 || j == 3 || j == 6 || j == 9) {
-                    matr[i][j] = randomStringDouble();
+                    matr[i][j] = makeRandomStringDouble(1,3);
                 } else {
-                    matr[i][j] = randomString();
+                    matr[i][j] = makeRandomString();
                 }
             }
         }
