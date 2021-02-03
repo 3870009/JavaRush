@@ -5,19 +5,19 @@ import java.io.InputStreamReader;
 import java.io.IOException;
 
 public class Rainbow {
-    final String COLOR_1 = "красный";
-    final String COLOR_2 = "оранжевый";
-    final String COLOR_3 = "желтый";
-    final String COLOR_4 = "зеленый";
-    final String COLOR_5 = "голубой";
-    final String COLOR_6 = "синий";
-    final String COLOR_7 = "фиолетовый";
-    final String MIXCOLOR_1 = "красно-";
-    final String MIXCOLOR_2 = "оранжево-";
-    final String MIXCOLOR_3 = "желто-";
-    final String MIXCOLOR_4 = "зелено-";
-    final String MIXCOLOR_6 = "сине-";
-    final String MIXCOLOR_7 = "фиолетово-";
+   private final static String COLOR_1 = "красный";
+    private final static String COLOR_2 = "оранжевый";
+    private final static String COLOR_3 = "желтый";
+    private final static String COLOR_4 = "зеленый";
+    private final static String COLOR_5 = "голубой";
+    private final static String COLOR_6 = "синий";
+    private final static String COLOR_7 = "фиолетовый";
+    private final static String MIXCOLOR_1 = "красно-";
+    private final static String MIXCOLOR_2 = "оранжево-";
+    private final static String MIXCOLOR_3 = "желто-";
+    private final static String MIXCOLOR_4 = "зелено-";
+    private final static String MIXCOLOR_6 = "сине-";
+    private final static String MIXCOLOR_7 = "фиолетово-";
 
 
     void userInput() throws IOException{
