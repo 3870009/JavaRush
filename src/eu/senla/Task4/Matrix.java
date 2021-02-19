@@ -3,7 +3,7 @@ package eu.senla.Task4;
 import java.util.Random;
 
 public class Matrix {
-    public String[][] matr = new String[10][10];
+    private String[][] matr = new String[10][10];
 
     public String[][] makeMatrix() {
        // String[][] matr = new String[10][10];

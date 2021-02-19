@@ -1,6 +1,4 @@
-package eu.senla.lesson24.task5;
-
-import java.util.Arrays;
+package eu.senla.task5;
 
 public class Ship {
     double resultWeight;

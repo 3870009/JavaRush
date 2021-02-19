@@ -1,4 +1,4 @@
-package eu.senla.lesson24.task5;
+package eu.senla.task5;
 
 abstract class Container {
     private final int DENSITY1 = 1000;

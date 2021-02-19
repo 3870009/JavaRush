@@ -1,4 +1,4 @@
-package eu.senla.lesson24.task5;
+package eu.senla.task5;
 
 public class ShipDeck {
     boolean allBig;
