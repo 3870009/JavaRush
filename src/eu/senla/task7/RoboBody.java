@@ -18,6 +18,10 @@ public class RoboBody implements Createable{
     public int getId() {
         return id;
     }
+    public Object getType() {
+        return bodyType;
+    }
+
 
     public RoboBody create() {
         BodyType[] bt = {BodyType.BODY_TYPE_1, BodyType.BODY_TYPE_2, BodyType.BODY_TYPE_3};
@@ -27,10 +31,7 @@ public class RoboBody implements Createable{
 
     @Override
     public String toString() {
-        return "RoboBody{" +
-                "bodyType=" + bodyType +
-                "ID=" + id +
-                '}';
+        return "Body: " + bodyType;
     }
 
 }
