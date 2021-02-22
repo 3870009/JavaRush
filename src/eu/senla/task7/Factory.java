@@ -6,6 +6,7 @@ public class Factory implements Createable {
         RoboHead rh = new RoboHead();
         RoboBody rb = new RoboBody();
 
+        //Очередность параметров неважна
         return new Robot(rb.create(), rh.create());
     }
 }

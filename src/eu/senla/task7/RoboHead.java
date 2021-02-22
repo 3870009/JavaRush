@@ -2,8 +2,8 @@ package eu.senla.task7;
 
 public class RoboHead implements Createable {
     HeadType headType;
-    public int id = 0;
-    public static int count = 1;
+    private int id = 0;
+    private static int count = 1;
 
     public RoboHead(HeadType headType) {
         this.headType = headType;

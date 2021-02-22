@@ -2,8 +2,8 @@ package eu.senla.task7;
 
 public class RoboBody implements Createable{
     BodyType bodyType;
-    public int id = 0;
-    public static int count = 1;
+    private int id = 0;
+    private static int count = 1;
 
     public RoboBody(BodyType bodyType) {
         this.bodyType = bodyType;

@@ -1,9 +1,11 @@
 package eu.senla.task7;
 
+//Обобщенный класс. Принимает на вход в качестве параметров голову робота и
+// тело робота не важно в каком порядке
 public class Robot <T,S>{
-    public String name;
-    public int id = 0;
-    public static int count = 1;
+    private String name;
+    private int id = 0;
+    private static int count = 1;
     T firstPart;
     S secondPart;
 
