@@ -1,18 +1,23 @@
 package eu.senla.task7;
 
-public class RoboBody implements Createable{
+public class RoboBody {
     BodyType bodyType;
     private int id = 0;
     private static int count = 1;
+    BodyType[] bt = BodyType.values();
+    int randomNum = (int) (Math.random() * 3);
+    ;
 
-    public RoboBody(BodyType bodyType) {
+  /*  public RoboBody(BodyType bodyType) {
         this.bodyType = bodyType;
         this.id = count++;
 
-    }
+    }*/
 
     public RoboBody() {
 
+        this.bodyType =bt[randomNum];
+        this.id = count++;
     }
 
     public int getId() {
@@ -23,11 +28,11 @@ public class RoboBody implements Createable{
     }
 
 
-    public RoboBody create() {
+   /* public RoboBody create() {
         BodyType[] bt = {BodyType.BODY_TYPE_1, BodyType.BODY_TYPE_2, BodyType.BODY_TYPE_3};
         int randomNum = (int) (Math.random() * 3);
         return new RoboBody(bt[randomNum]);
-    }
+    }*/
 
     @Override
     public String toString() {
