@@ -14,7 +14,7 @@ public class OrdersUtils {
     static Scanner scanner;
     private static boolean isOpened = false;
     private static List<Orders> ordersList = new ArrayList<>();
-    static List<Goods> goodsOrdered;
+
 
     public static void openOrdersFile(String source) {
         File file = new File(source);
@@ -38,6 +38,7 @@ public class OrdersUtils {
     }
 
     private static List<Goods> addGoodsToOrder() {
+        List<Goods> goodsOrdered;
         goodsOrdered = new ArrayList<>();
         while (true) {
 
@@ -64,6 +65,7 @@ public class OrdersUtils {
     }
 
     public static void readOrdersFile() {
+        List<Goods> goodsOrdered;
         if (isOpened) {
             while (scanner.hasNext()) {
                 String line = scanner.nextLine();

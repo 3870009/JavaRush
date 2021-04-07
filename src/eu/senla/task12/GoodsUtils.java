@@ -4,7 +4,10 @@ import eu.senla.task12.goods.Goods;
 
 import java.io.*;
 import java.time.LocalDate;
-import java.util.*;
+import java.util.ArrayList;
+import java.util.Iterator;
+import java.util.List;
+import java.util.Scanner;
 
 public class GoodsUtils {
     private static Scanner scanner;

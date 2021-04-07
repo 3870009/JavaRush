@@ -12,7 +12,7 @@ import java.util.List;
 public class Orders {
     private int orderId;
     private LocalDate dateOfOrder;
-     List<Goods> goodsOrdered;
+    private List<Goods> goodsOrdered;
 
     @Override
     public String toString() {
