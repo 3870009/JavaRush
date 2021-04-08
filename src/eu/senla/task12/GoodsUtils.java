@@ -15,7 +15,7 @@ public class GoodsUtils {
     private static boolean isOpened = false;
     static List<Goods> goodsList = new ArrayList<>();
 
-    public static void openGoodsFile(String source) {
+    static void openGoodsFile(String source) {
         File file = new File(source);
         try {
             scanner = new Scanner(file);
@@ -26,7 +26,7 @@ public class GoodsUtils {
         }
     }
 
-    public static void readGoodsFile() {
+    static void readGoodsFile() {
         if (isOpened) {
 
             while (scanner.hasNext()) {
@@ -38,7 +38,7 @@ public class GoodsUtils {
         } else System.out.println("Файл не открыт");
     }
 
-    public static void writeGoodsFile() {
+    static void writeGoodsFile() {
         try {
             BufferedWriter bw = new BufferedWriter(new FileWriter(sourceF, false));
             for (Goods goods : goodsList) {
@@ -60,7 +60,7 @@ public class GoodsUtils {
         return LocalDate.of(Integer.parseInt(splitDate[2]), Integer.parseInt(splitDate[1]), Integer.parseInt(splitDate[0]));
     }
 
-    public static void addGoods() {
+    static void addGoods() {
         int ID;
         scanner = new Scanner(System.in);
         if (goodsList.size() >= 1) {
@@ -74,25 +74,25 @@ public class GoodsUtils {
         goodsList.add(new Goods(ID, goodsTitle, date));
     }
 
-    public static void sortByTitle() {
+    static void sortByTitle() {
         goodsList.stream()
                 .sorted((o1, o2) -> o1.getGoodsTitle().compareTo(o2.getGoodsTitle()))
                 .forEach(s -> System.out.println(s));
     }
 
-    public static void sortByID() {
+    static void sortByID() {
         goodsList.stream()
                 .sorted((o1, o2) -> o1.getId() - o2.getId())
                 .forEach(s -> System.out.println(s));
     }
 
-    public static void sortByDate() {
+    static void sortByDate() {
         goodsList.stream()
                 .sorted((o1, o2) -> o1.getDate().compareTo(o2.getDate()))
                 .forEach(s -> System.out.println(s));
     }
 
-    public static void removeGoodsByID(int ID) {
+    static void removeGoodsByID(int ID) {
         Iterator<Goods> iterator = goodsList.iterator();
         while (iterator.hasNext()) {
             if (iterator.next().getId() == ID) {
@@ -101,7 +101,7 @@ public class GoodsUtils {
         }
     }
 
-    public static void printGoods() {
+    static void printGoods() {
         System.out.println("------------------------------------------------------");
         for (Goods goods : goodsList) {
             System.out.println(goods);

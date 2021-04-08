@@ -43,6 +43,7 @@ public class OrdersUtils {
         while (true) {
 
             System.out.println("Введите индекс товара для добавления в заказ: ");
+            System.out.println("Для выхода в меня заказов нажмите <-1>");
             int goodsIndex = scanner.nextInt();
             if (goodsIndex == -1) break;
             int index;
@@ -55,7 +56,7 @@ public class OrdersUtils {
         }
         return goodsOrdered;
     }
-    public static void removeOrderByID(int orderId) {
+    static void removeOrderByID(int orderId) {
         Iterator<Orders> iterator = ordersList.iterator();
         while (iterator.hasNext()) {
             if (iterator.next().getOrderId() == orderId) {
@@ -64,7 +65,7 @@ public class OrdersUtils {
         }
     }
 
-    public static void readOrdersFile() {
+    static void readOrdersFile() {
         List<Goods> goodsOrdered;
         if (isOpened) {
             while (scanner.hasNext()) {
@@ -90,7 +91,7 @@ public class OrdersUtils {
         } else System.out.println("Файл не открыт");
     }
 
-    public static void writeOrdersFile() {
+    static void writeOrdersFile() {
         try {
             StringBuilder str = new StringBuilder();
             BufferedWriter bw = new BufferedWriter(new FileWriter("src/eu/senla/task12/orders/orders.txt", false));
@@ -114,7 +115,7 @@ public class OrdersUtils {
         }
     }
 
-    public static void printOrders() {
+    static void printOrders() {
         System.out.println("------------------------------------------------------");
         for (Orders orders : ordersList) {
             System.out.println(orders);
